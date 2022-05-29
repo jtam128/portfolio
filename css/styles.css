@@ -1,28 +1,28 @@
 body {
   font-family: 'Montserrat';
+  text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
+ h1, h2, h3, h4, h5 ,h6 {  
+  font-family: 'Montserrat';
 }
 
-.container-fluid {
-padding: 3% 15% 7%;
-}
-
-h1 {  
-  font-family: 'Montserrat', sans-serif;  
+/* Headings */
+.big-heading {
   font-size: 3.5rem;  
   line-height: 1.5;  
   font-weight: 900;
 }
 
-h2 {
-  font-family: 'Montserrat';
+.section-heading {
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
+}
+
+/* Containers */
+.container-fluid {
+padding: 7% 15%;
 }
 
 /* Navigation Bar */
@@ -51,6 +51,18 @@ h2 {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+/* Applies only to the container-fluid class, which is inside of the Title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Title Image */
 .title-image {
   width: 25%;
@@ -60,13 +72,11 @@ h2 {
 
 /* Features Section */
 #features {
-padding: 7% 15%;
 background-color: #fff;
 position: relative;
 }
 
 .features-div {
-  text-align: center;
   padding: 5%;
 }
 
@@ -92,9 +102,14 @@ color: #8f8f8f;
 /* Testimonials Section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
 .testimonial-image {
@@ -103,13 +118,8 @@ color: #8f8f8f;
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
   background-color: #ef8172;
-text-align: center;
 padding-bottom: 3%;
 }
 
@@ -121,7 +131,11 @@ padding-bottom: 3%;
 /* Pricing Section */
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -142,21 +156,12 @@ text-align: center;
 
 /* CTA Section */
 #cta {
-  text-align: center;
   background-color: #ff4c68;
   color: #fff;
-  padding: 7% 15%;
-}
-
-.cta-heading {
-  font-family: 'Montserrat';
-  font-weight: 900;
 }
 
 /* Footer Section */
 #footer {
-  text-align: center;
-  padding: 7% 15%;
   background-color: #fff;
 }
 
