@@ -127,3 +127,15 @@ padding-bottom: 3%;
 .pricing-column {
 padding: 3% 2%;
 }
+
+@media (max-width: 1028px){
+  #title {
+text-align: center;
+  }
+
+.title-image {
+  position: static;
+  /* rotate it back to 0 so that the image goes back straight up */
+  transform: rotate(0); 
+}
+}
