@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TinDog</title>
+  <title>Jessica Tam Portfolio | Web Developer | Boston, MA</title>
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
     rel="stylesheet">
 
   <!-- CSS Stylesheets -->
@@ -26,11 +28,11 @@
 
 <body>
 
-  <section class="colored-section" id="title">
+  <section class="colored-section" id="hero">
     <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">TinDog <i class="fa-solid fa-paw"></i></a>
+        <a class="navbar-brand" href="">JT</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -39,13 +41,13 @@
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cta">Dowload</a>
             </li>
           </ul>
         </div>
@@ -53,18 +55,25 @@
 
 
 
-      <!-- Title -->
+      <!-- Hero Section -->
 
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
-          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
-            Download</button>
-          <button class="btn btn-outline-light btn-lg" type="button"><i class="fa-brands fa-google-play"></i> Download
-          </button>
+          <h1 class="big-heading">Hi There! <span class="wave">👋</span><br> I am Jessica Tam. <br>A Software Developer
+            from
+            Boston, MA.</h1>
+          <!-- <button class="btn btn-dark btn-lg download-button" type="button"> -->
+          <a href="images/JTamResume.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-dark btn-lg download-button">
+            View My Resume <i class="fa-solid fa-file-pdf"></i>
+          </a>
+          <!-- </button> -->
+          <br />
+          <!-- <i class="fa-brands fa-twitter title-icon"></i>
+          <i class="fa-brands fa-facebook-f title-icon"></i> -->
         </div>
         <div class="col-lg-6">
-          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+          <img class="hero-image" src="images/me.jpg" alt="image-of-jessica">
         </div>
       </div>
 
@@ -73,11 +82,25 @@
   </section>
 
 
-  <!-- Features -->
+  <!-- About Me Section -->
 
-  <section class="white-section" id="features">
+  <section class="white-section" id="about">
     <div class="container-fluid">
-      <div class="row">
+      <h1>About Me</h1>
+      <p>
+        My background in Software Development is not conventional. Before becoming a Software Developer, I worked as an
+        Accountant. While working as an Accountant, I realized the important role that software played in our everyday
+        life. It was from that point that I realized my interest in Software Development outgrew my interest in
+        Accounting.
+      </p>
+      <p>
+        In order to pursue my interest in Software Development, I attended Thinkful's Software Engineering program where
+        I learned full-stack development. This program was the beginning of my Software Engineering journey and I am
+        looking forward to continuious learn as well as applying the knowledge I gained into building lasting and
+        impactful applications.
+        <!-- I am a software Developer who is interested in building applications that have a lasting and useful impact on the user. -->
+      </p>
+      <!-- <div class="row">
         <div class="col-lg-4 features-div">
           <i class="fa-solid fa-circle-check features-icon fa-4x"></i>
           <h3 class="features-header">Easy to use.</h3>
@@ -95,17 +118,17 @@
           <h3 class="features-header">Guaranteed to work.</h3>
           <p class="features-paragraph">Find the love of your dog's life or your money back.</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
 
   <!-- Testimonials -->
 
-  <section class="colored-section" id="testimonials">
+  <!-- <section class="colored-section" id="testimonials"> -->
 
-    <!-- Practice Bootstrap Carousels -->
-    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+  <!-- Practice Bootstrap Carousels -->
+  <!-- <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
           <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on
@@ -130,76 +153,107 @@
         <span class="visually-hidden">Next</span>
       </button>
 
-  </section>
+  </section> -->
 
 
   <!-- Press -->
 
-  <section class="colored-section" id="press">
+  <!-- <section class="colored-section" id="press">
     <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
 
-  </section>
+  </section> -->
 
 
-  <!-- Pricing -->
+  <!-- Projects Section -->
 
-  <section class="white-section" id="pricing">
+  <section class="colored-section1" id="projects">
 
-    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
+    <h2 class="section-heading">Featured Projects</h2>
 
     <div class="row">
 
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="project-column col-lg-3 col-md-6">
         <div class="card">
           <div class="card-header">
-            <h3>Chihuahua</h3>
+            <h3>Local Library</h3>
           </div>
+          <img src="images/LocalLibrary.jpg" alt="...">
           <div class="card-body">
-            <h2 class="price-text">Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
+            <p>A description of project #1. etc etc etc</p>
+            <hr>
+            <small>html css JavaScript</small>
             <div class="d-grid">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+              <a type="button" class="btn btn-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Repo</a>
+              <br>
+              <a type="button" class="btn btn-outline-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Live</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="project-column col-lg-3 col-md-6">
         <div class="card">
           <div class="card-header">
-            <h3>Labrador</h3>
+            <h3>Thinkful BnB</h3>
           </div>
+          <img src="images/ThinkfulBnB.jpg" alt="...">
           <div class="card-body">
-            <h2 class="price-text">$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
+            <p>A description of project #1. etc etc etc</p>
+            <hr>
+            <small>html css JavaScript</small>
             <div class="d-grid">
-              <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              <a type="button" class="btn btn-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Repo</a>
+              <br>
+              <a type="button" class="btn btn-outline-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Live</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4">
+      <div class="project-column col-lg-3 col-md-6">
         <div class="card">
           <div class="card-header">
-            <h3>Mastiff</h3>
+            <h3>Pomodoro Timer</h3>
           </div>
+          <img src="images/PomodoroTimer.jpg" alt="...">
           <div class="card-body">
-            <h2 class="price-text">$99 / mo</h2>
-            <p>Pirority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
+            <p>A description of project #1. etc etc etc</p>
+            <hr>
+            <small>html css JavaScript</small>
             <div class="d-grid">
-              <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              <a type="button" class="btn btn-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Repo</a>
+              <br>
+              <a type="button" class="btn btn-outline-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-column col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Restaurant Reservation</h3>
+          </div>
+          <img src="images/restaurantRes.jpg" alt="...">
+          <div class="card-body">
+            <p>A description of project #1. etc etc etc</p>
+            <hr>
+            <small>html css JavaScript</small>
+            <div class="d-grid">
+              <a type="button" class="btn btn-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Repo</a>
+              <br>
+              <a type="button" class="btn btn-outline-dark btn-lg btn-block" href="http://www.github.com/jtam128">View
+                Live</a>
             </div>
           </div>
         </div>
@@ -212,25 +266,25 @@
 
   <!-- Call to Action -->
 
-  <section class="colored-section" id="cta">
+  <!-- <section class="colored-section" id="cta">
     <div class="container-fluid">
-      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
-      <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
+      <h3 class="big-heading">Contact Me</h3> -->
+  <!-- <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
         Download</button>
       <button class="btn btn-light btn-lg download-button" type="button"><i class="fa-brands fa-google-play"></i>
         Download
-      </button>
-    </div>
-  </section>
+      </button> -->
+  <!-- </div>
+  </section> -->
 
 
-  <!-- Footer -->
+  <!-- Footer Section -->
 
   <footer class="white-section" id="footer">
     <div class="container-fluid">
-      <i class="fa-brands fa-twitter footer-icon"></i>
-      <i class="fa-brands fa-facebook-f footer-icon"></i>
-      <i class="fa-brands fa-instagram footer-icon"></i>
+      <h3 class="big-heading">Contact Me</h3>
+      <i class="fa-brands fa-github footer-icon"></i>
+      <i class="fa-brands fa-linkedin footer-icon"></i>
       <i class="fa-solid fa-envelope footer-icon"></i>
       <p class="footer-paragraph">© Copyright
         <script>document.write(new Date().getFullYear())</script> TinDog

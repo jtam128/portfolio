@@ -1,15 +1,15 @@
 body {
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   text-align: center;
 }
 
  h1, h2, h3, h4, h5 ,h6 {  
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
 }
 
 /* Headings */
 .big-heading {
-  font-size: 3.5rem;  
+  /* font-size: 3.5rem;   */
   line-height: 1.5;  
   font-weight: 900;
 }
@@ -22,12 +22,23 @@ body {
 
 /* Sections */
 .colored-section {
-  background-color: #ff4c68;
+  background-color: #505265;
   color: #fff;
+  /* height: 100vh; */
+}
+
+.colored-section1 {
+  background-color: #505265;
+  color: #000;
+  /* height: 100vh; */
 }
 
 .white-section {
 background-color: #fff;
+}
+
+.grey-section {
+background-color: rgb(171, 167, 167);
 }
 
 /* Containers */
@@ -52,7 +63,7 @@ padding: 7% 15%;
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   font-weight: 300;
 }
 
@@ -61,24 +72,25 @@ padding: 7% 15%;
   margin: 5% 3% 5% 0;
 }
 
-/* Title Section */
-#title {
+/* Hero Section */
+#hero {
   text-align: left;
 }
 
-#title .container-fluid {
+#hero .container-fluid {
   padding: 3% 15% 7%;
 }
 
-/* Title Image */
-.title-image {
+/* Hero Image */
+.hero-image {
   width: 25%;
-  transform: rotate(25deg);
+  /* transform: rotate(25deg); */
   position: absolute;
+  border-radius: 10%;
 }
 
-/* Features Section */
-#features {
+/* About Me Section */
+#about {
 /* background-color: #fff; */
 position: relative;
 }
@@ -97,7 +109,7 @@ color: #ff4c68;
 }
 
 .features-header {
- font-family: 'Montserrat';
+ font-family: 'Roboto';
  font-weight: 900;
  font-size: 1.5rem;
 }
@@ -135,30 +147,35 @@ padding-bottom: 3%;
   margin: 20px 20px 50px;
 }
 
-/* Pricing Section */
-#pricing {
+/* Projects Section */
+#projects {
   padding: 100px;
 }
 
-.price-text {
+/* .price-text {
   font-size: 3rem;
   line-height: 1.5;
-}
+} */
 
-.pricing-column {
+/* .pricing-column {
 padding: 3% 2%;
-}
+} */
 
 @media (max-width: 1028px){
-  #title {
+  #hero {
 text-align: center;
   }
 
-.title-image {
+.hero-image {
   position: static;
   /* rotate it back to 0 so that the image goes back straight up */
-  transform: rotate(0); 
+  /* transform: rotate(0);  */
 }
+
+.project-column {
+padding: 1% 1%;
+}
+
 }
 
 /* Footer Section */
@@ -170,18 +187,68 @@ text-align: center;
   padding: 20px 10px;
 }
 
-.fa-twitter:hover {
-  color: #4cb1ff;
-}
-
-.fa-facebook-f:hover {
+.fa-github:hover {
   color: #4b5da7;
+  cursor: pointer;
 }
 
-.fa-instagram:hover {
-color:#8ae75c;
+.fa-linkedin:hover {
+  color: #4b5da7;
+  cursor: pointer;
 }
 
 .fa-envelope:hover {
   color:#47494e;
+  cursor: pointer;
 }
+
+
+/* handwave emoji animation in hero section start */
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+/* handwave emoji animation in hero section end */
