@@ -9,3 +9,12 @@ node_modules
 local/
 nm-*/
 
+
+###
+node_modules
+.env
+.vscode
+.vercel
+local/
+nm-*/
+
