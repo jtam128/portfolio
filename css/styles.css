@@ -1,10 +1,10 @@
 body {
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   text-align: center;
 }
 
  h1, h2, h3, h4, h5 ,h6 {  
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
 }
 
 /* Headings */
@@ -22,13 +22,17 @@ body {
 
 /* Sections */
 .colored-section {
-  background-color: #505265;
+  /* background-color: #505265; */
+background: #9796f0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   /* height: 100vh; */
 }
 
 .colored-section1 {
-  background-color: #505265;
+  /* background-color: #505265; */
+  background-color: #eed3d9;  /* fallback for old browsers */
   color: #000;
   /* height: 100vh; */
 }
@@ -37,16 +41,12 @@ body {
 background-color: #fff;
 }
 
-.grey-section {
-background-color: rgb(171, 167, 167);
-}
-
 /* Containers */
 .container-fluid {
 padding: 7% 15%;
 }
 
-/* Navigation Bar */
+/* Nav Bar */
 .navbar {
   padding: 0 0  4.5rem;
 }
@@ -57,14 +57,38 @@ padding: 7% 15%;
   font-weight: bold;
 }
 
-.navbar-item {
-  padding: 0 18px;
-}
-
 .nav-link {
   font-size: 1.2rem;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-weight: 300;
+}
+
+/* .underline a{
+  text-decoration: none;
+  color: #d4dae0;
+} */
+
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 
 /* Download Buttons  */
@@ -90,61 +114,19 @@ padding: 7% 15%;
 }
 
 /* About Me Section */
-#about {
+#about-me {
 /* background-color: #fff; */
 position: relative;
 }
 
-.features-div {
-  padding: 5%;
-}
-
-.features-icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.features-icon:hover {
-color: #ff4c68;
-}
-
-.features-header {
- font-family: 'Roboto';
+#about-me h1 {
+ font-family: 'Montserrat';
  font-weight: 900;
- font-size: 1.5rem;
 }
 
-.features-paragraph {
-color: #8f8f8f;
-}
-
-/* Testimonials Section */
-
-#testimonials {
-  background-color: #ef8172;
-  /* color: #fff; */
-}
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 900;
-}
-
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-#press {
-  background-color: #ef8172;
-padding-bottom: 3%;
-}
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
+#about-me p {
+ font-family: 'Montserrat';
+ font-weight: 300;
 }
 
 /* Projects Section */
@@ -152,13 +134,12 @@ padding-bottom: 3%;
   padding: 100px;
 }
 
-/* .price-text {
-  font-size: 3rem;
-  line-height: 1.5;
-} */
-
-/* .pricing-column {
-padding: 3% 2%;
+/* .text-truncate {
+  display: block;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 } */
 
 @media (max-width: 1028px){
@@ -183,72 +164,26 @@ padding: 1% 1%;
   background-color: #fff;
 }
 
+#footer a {
+  text-decoration: none;
+}
+
 .footer-icon{
   padding: 20px 10px;
+  color: #000;
 }
 
 .fa-github:hover {
-  color: #4b5da7;
+  color: #5f6168;
   cursor: pointer;
 }
 
 .fa-linkedin:hover {
-  color: #4b5da7;
+  color:#5f6168;
   cursor: pointer;
 }
 
 .fa-envelope:hover {
-  color:#47494e;
+  color:#5f6168;
   cursor: pointer;
 }
-
-
-/* handwave emoji animation in hero section start */
-.wave {
-  animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;
-  /* Change to speed up or slow down */
-  animation-iteration-count: infinite;
-  /* Never stop waving :) */
-  transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0.0deg)
-  }
-
-  10% {
-    transform: rotate(14.0deg)
-  }
-
-  /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8.0deg)
-  }
-
-  30% {
-    transform: rotate(14.0deg)
-  }
-
-  40% {
-    transform: rotate(-4.0deg)
-  }
-
-  50% {
-    transform: rotate(10.0deg)
-  }
-
-  60% {
-    transform: rotate(0.0deg)
-  }
-
-  /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0.0deg)
-  }
-}
-/* handwave emoji animation in hero section end */
