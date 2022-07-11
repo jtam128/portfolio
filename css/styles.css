@@ -9,7 +9,6 @@ body {
 
 /* Headings */
 .big-heading {
-  /* font-size: 3.5rem;   */
   line-height: 1.5;  
   font-weight: 900;
 }
@@ -27,14 +26,12 @@ background: #9796f0;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
-  /* height: 100vh; */
 }
 
 .colored-section1 {
   /* background-color: #505265; */
   background-color: #eed3d9;  /* fallback for old browsers */
   color: #000;
-  /* height: 100vh; */
 }
 
 .white-section {
@@ -109,14 +106,12 @@ padding: 7% 15%;
 /* Hero Image */
 .hero-image {
   width: 25%;
-  /* transform: rotate(25deg); */
   position: absolute;
   border-radius: 10%;
 }
 
 /* About Me Section */
 #about-me {
-/* background-color: #fff; */
 position: relative;
 }
 
@@ -134,19 +129,6 @@ position: relative;
 #projects {
   padding: 50px;
 }
-.project-column {
-/* padding: 1% 1%;  */
-/* not supposed to use padding, instead use margin ??? */
-/* margin: 1px; */
-}
-
-/* .text-truncate {
-  display: block;
-  max-width: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
 
 @media (max-width: 1028px){
   #hero {
@@ -155,23 +137,12 @@ text-align: center;
 
 .hero-image {
   position: static;
-  /* rotate it back to 0 so that the image goes back straight up */
-  /* transform: rotate(0);  */
-}
-
-.project-column {
-  /* add padding between each card in medium and small viewport */
-padding: 1% 1%; 
-/* not supposed to use padding, instead use margin ??? */
-/* margin: 10px; */
 }
 }
 
 @media (max-width: 1200px) {
-
   .project-column {
-    /* margin: 10px; */
-padding: 1% 1%; 
+    padding: 1%; 
   }
 }
 
