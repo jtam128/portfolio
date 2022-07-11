@@ -32,7 +32,7 @@ background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, F
 
 .colored-section1 {
   /* background-color: #505265; */
-  background-color: #e2dbe7;
+  background-color: #eed3d9;  /* fallback for old browsers */
   color: #000;
   /* height: 100vh; */
 }
@@ -161,16 +161,15 @@ text-align: center;
 
 .project-column {
   /* add padding between each card in medium and small viewport */
-/* padding: 1% 1%;  */
+padding: 1% 1%; 
 /* not supposed to use padding, instead use margin ??? */
 /* margin: 10px; */
 }
 }
 
-@media (max-width: 1200px) {
-
+@media (min-width: 540px) {
   .project-column {
-padding: 1% 1%; 
+    /* margin: 10px; */
   }
 }
 
