@@ -63,6 +63,7 @@ padding: 7% 15%;
 
 .nav-link:hover {
   color: #5f6168;
+  text-shadow: 2px 2px 5px #fff;
 }
 
 /* Download Buttons  */
