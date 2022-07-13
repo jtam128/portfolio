@@ -127,6 +127,10 @@ text-align: center;
   margin: 30px;
   font-size: 90px;
  }
+
+ .footer-paragraph {
+  font-size: 25px;
+ }
 }
 
 @media (max-width: 1200px) {
