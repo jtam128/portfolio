@@ -119,6 +119,9 @@ text-align: center;
 #about-me p {
   font-size: 30px;
 }
+.nav-link {
+  font-size: 30px;
+}
 }
 
 @media (max-width: 1200px) {
