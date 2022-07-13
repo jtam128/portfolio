@@ -108,8 +108,8 @@ position: relative;
   padding: 50px;
 }
 
-/* @media (max-width: 1028px){ */
-@media (max-width: 993px){
+@media (max-width: 1028px){
+/* @media (max-width: 993px){ */
   #hero {
 text-align: center;
   }
