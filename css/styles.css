@@ -122,6 +122,11 @@ text-align: center;
 .nav-link {
   font-size: 30px;
 }
+
+.footer-icon{
+  margin: 30px;
+  font-size: 40px;
+ }
 }
 
 @media (max-width: 1200px) {
