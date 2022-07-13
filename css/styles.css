@@ -40,7 +40,8 @@ background-color: #fff;
 
 /* Containers */
 .container-fluid {
-padding: 7% 15%;
+/* padding: 7% 15%; */
+padding: 5% 7%;
 }
 
 /* Nav Bar */
@@ -114,6 +115,9 @@ text-align: center;
 
 .hero-image {
   position: static;
+}
+#about-me p {
+  font-size: 30px;
 }
 }
 
