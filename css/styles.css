@@ -108,7 +108,8 @@ position: relative;
   padding: 50px;
 }
 
-@media (max-width: 1028px){
+/* @media (max-width: 1028px){ */
+@media (max-width: 993px){
   #hero {
 text-align: center;
   }
@@ -136,6 +137,18 @@ text-align: center;
 @media (max-width: 980px) {
   .navbar-toggler-icon {
     font-size: 40px;
+  }
+}
+
+/* @media (max-width: 1029px) and (min-width: 992px) {
+  .hero-image {
+  position: absolute;
+}
+} */
+
+@media (max-width: 993px) {
+  .hero-image {
+    margin-right: 20px;
   }
 }
 
