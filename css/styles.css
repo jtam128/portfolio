@@ -116,7 +116,6 @@ text-align: center;
 .hero-image {
   position: static;
 }
-
 #about-me p {
   font-size: 30px;
 }
@@ -132,10 +131,12 @@ text-align: center;
  .footer-paragraph {
   font-size: 25px;
  }
+}
 
- .navbar-toggler-icon {
-  font-size: 40px;
- }
+@media (max-width: 980px) {
+  .navbar-toggler-icon {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -172,5 +173,4 @@ text-align: center;
   color:#5f6168;
   cursor: pointer;
 }
-
 
