@@ -29,7 +29,6 @@ background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, F
 }
 
 .colored-section1 {
-  /* background-color: #505265; */
   background-color: #8689c9;  /* fallback for old browsers */
   color: #000;
 }
@@ -40,7 +39,6 @@ background-color: #fff;
 
 /* Containers */
 .container-fluid {
-/* padding: 7% 15%; */
 padding: 5% 7%;
 }
 
@@ -108,7 +106,6 @@ position: relative;
   padding: 50px;
 }
 
-/* @media (max-width: 1028px){ */
 @media (max-width: 993px){
   #hero {
 text-align: center;
@@ -145,17 +142,6 @@ text-align: center;
     font-size: 40px;
   }
 }
-
-/* @media (max-width: 980px) and (min-width: 1200px) {
-  .project-column {
-    margin: 30px;
-  }
-} */
-/* @media (max-width: 1029px) and (min-width: 992px) {
-  .hero-image {
-  position: absolute;
-}
-} */
 
 @media (max-width: 993px) {
   .hero-image {
