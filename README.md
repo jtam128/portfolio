@@ -1,6 +1,8 @@
 # My Portfolio Website
 A Portfolio I created with Bootstrap, HTML, and CSS. It has a Hero section, an About Me section, a Projects section, and a Contact Me section.
 
+[Live Link](https://jtam-portfolio.vercel.app/)
+
 # Screenshots
 A gif of the desktop view of the website.
 
