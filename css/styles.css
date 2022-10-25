@@ -1,15 +1,20 @@
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
 }
 
- h1, h2, h3, h4, h5 ,h6 {  
-  font-family: 'Montserrat';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
 }
 
 /* Headings */
 .big-heading {
-  line-height: 1.5;  
+  line-height: 1.5;
   font-weight: 900;
 }
 
@@ -22,40 +27,48 @@ body {
 /* Sections */
 .colored-section {
   /* background-color: #505265; */
-background: #9796f0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
 
 .colored-section1 {
-  background-color: #8689c9;  /* fallback for old browsers */
+  background-color: #8689c9; /* fallback for old browsers */
   color: #000;
 }
 
 .white-section {
-background-color: #fff;
+  background-color: #fff;
 }
 
 /* Containers */
 .container-fluid {
-padding: 5% 7%;
+  padding: 5% 7%;
 }
 
 /* Nav Bar */
 .navbar {
-  padding: 0 0  4.5rem;
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 300;
   color: #000;
 }
@@ -88,17 +101,43 @@ padding: 5% 7%;
 
 /* About Me Section */
 #about-me {
-position: relative;
+  position: relative;
 }
 
 #about-me h1 {
- font-family: 'Montserrat';
- font-weight: 900;
+  font-family: "Montserrat";
+  font-weight: 900;
 }
 
 #about-me p {
- font-family: 'Montserrat';
- font-weight: 300;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.about-me-hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-me-hover {
+  background: linear-gradient(to right, #8689c9, #8689c9),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms;
+}
+
+.about-me-hover:hover {
+  background-size: 0 3px, 100% 3px;
+  color: #000;
+  cursor: default;
+  transition: color 1s;
 }
 
 /* Projects Section */
@@ -106,29 +145,29 @@ position: relative;
   padding: 50px;
 }
 
-@media (max-width: 993px){
+@media (max-width: 993px) {
   #hero {
-text-align: center;
+    text-align: center;
   }
 
-.hero-image {
-  position: static;
-}
-#about-me p {
-  font-size: 30px;
-}
-.nav-link {
-  font-size: 30px;
-}
+  .hero-image {
+    position: static;
+  }
+  #about-me p {
+    font-size: 30px;
+  }
+  .nav-link {
+    font-size: 30px;
+  }
 
-.footer-icon{
-  margin: 30px;
-  font-size: 90px;
- }
+  .footer-icon {
+    margin: 30px;
+    font-size: 90px;
+  }
 
- .footer-paragraph {
-  font-size: 25px;
- }
+  .footer-paragraph {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -151,7 +190,7 @@ text-align: center;
 
 @media (max-width: 1200px) {
   .project-column {
-    padding: 1%; 
+    padding: 1%;
   }
 }
 
@@ -164,7 +203,7 @@ text-align: center;
   text-decoration: none;
 }
 
-.footer-icon{
+.footer-icon {
   padding: 20px;
   color: #000;
 }
@@ -175,12 +214,12 @@ text-align: center;
 }
 
 .fa-linkedin:hover {
-  color:#5f6168;
+  color: #5f6168;
   cursor: pointer;
 }
 
 .fa-envelope:hover {
-  color:#5f6168;
+  color: #5f6168;
   cursor: pointer;
 }
 
@@ -194,12 +233,28 @@ text-align: center;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
